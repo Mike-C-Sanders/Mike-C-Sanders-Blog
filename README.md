@@ -1,5 +1,7 @@
 # Mike-C-Sanders-Blog
-Sample Blog Page using CSS &amp; HTML
+Sample Blog Page using CSS &amp; HTML.
+
+Outcome: to design a blog site with two pages, one post and one main page. 
 
 ## Directory Info
 
@@ -12,5 +14,7 @@ CSS files are stored in the CSS folder
 Additional page posts are stored in the HTML file folder.
 
 ## Project Details
+
+Two pages. Main home page and the single post that was created. 
 
 
