@@ -1,0 +1,45 @@
+/* Image style sheet. */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    font-style: italic;
+    text-align: center;
+    color: aliceblue;
+}
+/* Images for the posts */
+#firstPost{
+    background-image: url(../Images/running.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    height: 300px;
+    
+}
+#secondPost{
+    background-image: url(../Images/coldweather.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+#thirdPost{
+    background-image: url(../Images/hotweather.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+#fourthPost{
+    background-image: url(../Images/runtips.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+}

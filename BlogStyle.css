@@ -1,0 +1,103 @@
+/* Primary container grid */
+@import 'main.css';
+@import 'images.css';
+@import 'PostsStyle.css';
+
+
+/* Main container built 3 sectional rows. */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px, 1fr, 90px;
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    /* border: 2px solid yellow; */
+    gap: 1rem;
+    background-color: aliceblue;
+}
+
+.header{
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #02587D;
+
+}
+
+.nav{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: aliceblue;
+    
+}
+
+#navLink{
+    color: aliceblue;
+    padding: 10px;
+}
+/* Main content for Blog Home Page */
+.content{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+
+}
+
+.cardBox{
+
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "photo"
+    "txt";
+    background-color: #048EC9;
+    box-shadow: 5px 10px 3px gray;
+}
+/* Post heading, information and reading more. */
+.cardContent{
+    grid-area: txt;
+}
+.cardPhoto{
+    grid-area: photo;
+
+}
+
+.postDate{
+    font-style: italic;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Button  link*/
+.cardButton{
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+/* Text describing the blog post */
+.cardText{
+    text-align: center;
+    color: aliceblue;
+    
+    
+}
+
+
+@media(min-width: 900px){
+    .container{
+        display: grid;
+        grid-template-rows: 10%, 10%, 20%, 25%, 10%;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "navb "
+        "main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+    }
+}
